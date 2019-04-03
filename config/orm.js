@@ -8,14 +8,14 @@ var orm = {
             nd(result)
         });
     },
-    insertOne: function(name, dev, cb) {
+    insertOne: function(name, dev, nd) {
         var queryString = "INSERT INTO burgers(burger_name, devoured) VALUES (?, ?)";
 
         connection.query(queryString, function(err, result) {
             nd(result);
         })
     },
-    updateOne: function(id, cb) {
+    updateOne: function(id, nd) {
         var queryString  = "UPDATE burgers SET devoured = true WHERE id = ?";
 
         connection.query(queryString, [id], function(err,result) {
