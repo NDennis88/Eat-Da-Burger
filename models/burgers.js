@@ -1,4 +1,4 @@
-var orm = require('../config/orm');
+var orm = require('../config/orm.js');
 
 var burgers = {
     selectAll: function(cb) {
@@ -17,7 +17,7 @@ var burgers = {
         orm.updateOne(id, function(res) {
             console.log('here' + res);
             cb(res);
-        })
+        });
     }
 };
 
