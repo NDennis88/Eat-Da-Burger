@@ -15,8 +15,6 @@ app.use(express.static("public"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-var PORT = process.env.PORT || 8080;
-
 var routes = require('./controllers/burgerController.js');
 
 app.use(routes);
