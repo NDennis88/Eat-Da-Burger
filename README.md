@@ -13,7 +13,7 @@ To run this application, you need to install the MySQL database on your device. 
 
 ## Sample View
 
-![Eat Da Burger Screenshot](/assets/images/screenshot.png/)
+![Eat Da Burger Screenshot](/public/assets/images/screenshot.png)
 
 
 ## Technology
